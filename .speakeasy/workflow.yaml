@@ -1,23 +1,23 @@
 workflowVersion: 1.0.0
 speakeasyVersion: latest
 sources:
-    The Speakeasy Bar:
-        inputs:
-            - location: ../../openapi-specs/speakeasy-bar.yaml
-        overlays:
-            - location: .speakeasy/speakeasy-modifications-overlay.yaml
-        output: .speakeasy/out.openapi.yaml
-        registry:
-            location: registry.speakeasyapi.dev/speakeasy-self/speakeasy-self/the-speakeasy-bar
+  The Speakeasy Bar:
+    inputs:
+      - location: ./speakeasy-bar.yaml
+    overlays:
+      - location: .speakeasy/speakeasy-modifications-overlay.yaml
+    output: .speakeasy/out.openapi.yaml
+    registry:
+      location: registry.speakeasyapi.dev/speakeasy-self/speakeasy-self/the-speakeasy-bar
 targets:
-    speakeasy-bar:
-        target: typescript
-        source: The Speakeasy Bar
-        codeSamples:
-            registry:
-                location: registry.speakeasyapi.dev/speakeasy-self/speakeasy-self/the-speakeasy-bar-typescript-code-samples
-            labelOverride:
-                fixedValue: Typescript (SDK)
-            blocking: false
-        testing:
-            enabled: true
+  speakeasy-bar:
+    target: typescript
+    source: The Speakeasy Bar
+    codeSamples:
+      registry:
+        location: registry.speakeasyapi.dev/speakeasy-self/speakeasy-self/the-speakeasy-bar-typescript-code-samples
+      labelOverride:
+        fixedValue: Typescript (SDK)
+      blocking: false
+    testing:
+      enabled: true
