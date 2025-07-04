@@ -1,10 +1,10 @@
 arazzo: 1.0.1
 info:
   title: Test Suite
-  summary: Created from /home/trist/workspace/scratch/speakeasy-bar-typescript/.speakeasy/temp/overlay_fZwCQHrbXs.yaml
+  summary: Created from /home/trist/workspace/scratch/speakeasy-bar-typescript/.speakeasy/temp/overlay_CFSvhSuMPo.yaml
   version: 0.0.1
 sourceDescriptions:
-  - name: /home/trist/workspace/scratch/speakeasy-bar-typescript/.speakeasy/temp/overlay_fZwCQHrbXs.yaml
+  - name: /home/trist/workspace/scratch/speakeasy-bar-typescript/.speakeasy/temp/overlay_CFSvhSuMPo.yaml
     url: https://TBD.com
     type: openapi
 workflows:

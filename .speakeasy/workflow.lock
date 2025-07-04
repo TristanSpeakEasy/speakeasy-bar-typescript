@@ -14,7 +14,7 @@ targets:
         sourceRevisionDigest: sha256:53435045c3ab72840a8f7a56c7d228359ccd76b479ece2f288ade4cafdbd35b9
         sourceBlobDigest: sha256:b76337fc3fd414bb25be261e74a1f0637b9d997571e232038181ab3fa960e897
         codeSamplesNamespace: the-speakeasy-bar-typescript-code-samples
-        codeSamplesRevisionDigest: sha256:585dfd21b8653305334cf1f2bcad23fe1a0e233e1dd4696055d359386fa40a7b
+        codeSamplesRevisionDigest: sha256:3bbf95ff013416fe8f78e25d3a0a638e79de0a33b2404096c43a01ecb00231a3
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest
