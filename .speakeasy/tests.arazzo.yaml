@@ -1,0 +1,314 @@
+arazzo: 1.0.1
+info:
+  title: Test Suite
+  summary: Created from /home/trist/workspace/scratch/speakeasy-bar-typescript/.speakeasy/temp/overlay_fZwCQHrbXs.yaml
+  version: 0.0.1
+sourceDescriptions:
+  - name: /home/trist/workspace/scratch/speakeasy-bar-typescript/.speakeasy/temp/overlay_fZwCQHrbXs.yaml
+    url: https://TBD.com
+    type: openapi
+workflows:
+  - workflowId: authenticate
+    steps:
+      - stepId: test
+        operationId: authenticate
+        requestBody:
+          contentType: application/json
+          payload: {}
+        successCriteria:
+          - condition: $statusCode == 200
+          - condition: $response.header.Content-Type == application/json
+          - context: $response.body
+            condition: |
+              {}
+            type: simple
+    x-speakeasy-test-group: authentication
+    x-speakeasy-test-rebuild: true
+  - workflowId: listDrinks-unauthenticated_drinks
+    steps:
+      - stepId: test
+        operationId: listDrinks
+        successCriteria:
+          - condition: $statusCode == 200
+          - condition: $response.header.Content-Type == application/json
+          - context: $response.body
+            condition: |
+              [
+                {
+                  "name": "Old Fashioned",
+                  "type": "cocktail",
+                  "price": 1000,
+                  "photo": "https://speakeasy.bar/drinks/old_fashioned.jpg",
+                  "dataLevel": "unauthenticated"
+                },
+                {
+                  "name": "Manhattan",
+                  "type": "cocktail",
+                  "price": 1200,
+                  "photo": "https://speakeasy.bar/drinks/manhattan.jpg",
+                  "dataLevel": "unauthenticated"
+                },
+                {
+                  "name": "Negroni",
+                  "type": "cocktail",
+                  "price": 1500,
+                  "photo": "https://speakeasy.bar/drinks/negroni.jpg",
+                  "dataLevel": "unauthenticated"
+                }
+              ]
+            type: simple
+    x-speakeasy-test-group: drinks
+    x-speakeasy-test-rebuild: true
+  - workflowId: listDrinks-authenticated_drinks
+    steps:
+      - stepId: test
+        operationId: listDrinks
+        successCriteria:
+          - condition: $statusCode == 200
+          - condition: $response.header.Content-Type == application/json
+          - context: $response.body
+            condition: |
+              [
+                {
+                  "name": "Old Fashioned",
+                  "type": "cocktail",
+                  "price": 1000,
+                  "photo": "https://speakeasy.bar/drinks/old_fashioned.jpg",
+                  "dataLevel": "authenticated",
+                  "stock": 100,
+                  "productCode": "AC-A2DF3"
+                },
+                {
+                  "name": "Manhattan",
+                  "type": "cocktail",
+                  "price": 1200,
+                  "photo": "https://speakeasy.bar/drinks/manhattan.jpg",
+                  "dataLevel": "authenticated",
+                  "stock": 50,
+                  "productCode": "AC-A2DF4"
+                },
+                {
+                  "name": "Negroni",
+                  "type": "cocktail",
+                  "price": 1500,
+                  "photo": "https://speakeasy.bar/drinks/negroni.jpg",
+                  "dataLevel": "authenticated",
+                  "stock": 0,
+                  "productCode": "AC-A2DF5"
+                }
+              ]
+            type: simple
+    x-speakeasy-test-group: drinks
+    x-speakeasy-test-rebuild: true
+  - workflowId: getDrink
+    steps:
+      - stepId: test
+        operationId: getDrink
+        parameters:
+          - name: productCode
+            in: path
+            value: AC-A2DF3
+        successCriteria:
+          - condition: $statusCode == 200
+          - condition: $response.header.Content-Type == application/json
+          - context: $response.body
+            condition: |
+              {
+                "name": "Old Fashioned",
+                "price": 1000,
+                "photo": "https://speakeasy.bar/drinks/old_fashioned.jpg",
+                "productCode": "AC-A2DF3",
+                "ingredients": [
+                  {
+                    "ingredientProductCode": "AC-A2DF3",
+                    "quantity": 253504
+                  }
+                ]
+              }
+            type: simple
+    x-speakeasy-test-group: drinks
+    x-speakeasy-test-rebuild: true
+  - workflowId: updateDrink-old_fashioned
+    steps:
+      - stepId: test
+        operationId: updateDrink
+        parameters:
+          - name: productCode
+            in: path
+            value: AC-A2DF3
+        requestBody:
+          contentType: application/json
+          payload:
+            name: Old Fashioned
+            photo: https://speakeasy.bar/drinks/old_fashioned.jpg
+            price: 1000
+            productCode: AC-A2DF3
+            type: cocktail
+        successCriteria:
+          - condition: $statusCode == 200
+          - condition: $response.header.Content-Type == application/json
+          - context: $response.body
+            condition: |
+              {
+                "name": "Old Fashioned",
+                "type": "cocktail",
+                "price": 1000,
+                "photo": "https://speakeasy.bar/drinks/old_fashioned.jpg",
+                "productCode": "AC-A2DF3"
+              }
+            type: simple
+    x-speakeasy-test-group: drinks
+    x-speakeasy-test-rebuild: true
+  - workflowId: searchDrinks-old_fashioned
+    steps:
+      - stepId: test
+        operationId: searchDrinks
+        parameters:
+          - name: query
+            in: query
+            value: Old Fashioned
+        successCriteria:
+          - condition: $statusCode == 200
+          - condition: $response.header.Content-Type == application/json
+          - context: $response.body
+            condition: |
+              [
+                {
+                  "name": "Old Fashioned",
+                  "price": 1000,
+                  "photo": "https://speakeasy.bar/drinks/old_fashioned.jpg",
+                  "productCode": "AC-A2DF3",
+                  "ingredients": [
+                    {
+                      "ingredientProductCode": "AC-A2DF3",
+                      "quantity": 504946
+                    }
+                  ]
+                }
+              ]
+            type: simple
+    x-speakeasy-test-group: drinks
+    x-speakeasy-test-rebuild: true
+  - workflowId: searchDrinks-manhattan
+    steps:
+      - stepId: test
+        operationId: searchDrinks
+        parameters:
+          - name: query
+            in: query
+            value: Manhattan
+        successCriteria:
+          - condition: $statusCode == 200
+          - condition: $response.header.Content-Type == application/json
+          - context: $response.body
+            condition: |
+              [
+                {
+                  "name": "Old Fashioned",
+                  "price": 1000,
+                  "photo": "https://speakeasy.bar/drinks/old_fashioned.jpg",
+                  "productCode": "AC-A2DF3",
+                  "ingredients": [
+                    {
+                      "ingredientProductCode": "AC-A2DF3",
+                      "quantity": 504946
+                    }
+                  ]
+                }
+              ]
+            type: simple
+    x-speakeasy-test-group: drinks
+    x-speakeasy-test-rebuild: true
+  - workflowId: listIngredients
+    steps:
+      - stepId: test
+        operationId: listIngredients
+        successCriteria:
+          - condition: $statusCode == 200
+          - condition: $response.header.Content-Type == application/json
+          - context: $response.body
+            condition: |
+              [
+                {
+                  "name": "Sugar Syrup",
+                  "type": "packaged",
+                  "stock": 10,
+                  "productCode": "AC-A2DF3",
+                  "photo": "https://speakeasy.bar/ingredients/sugar_syrup.jpg"
+                }
+              ]
+            type: simple
+    x-speakeasy-test-group: ingredients
+    x-speakeasy-test-rebuild: true
+  - workflowId: createOrder-pending_order
+    steps:
+      - stepId: test
+        operationId: createOrder
+        requestBody:
+          contentType: application/json
+          payload:
+            orderType: drink
+            productCode: AC-A2DF3
+            quantity: 185162
+        successCriteria:
+          - condition: $statusCode == 200
+          - condition: $response.header.Content-Type == application/json
+          - context: $response.body
+            condition: |
+              {
+                "orderType": "ingredient",
+                "productCode": "AC-A2DF3",
+                "quantity": 924003,
+                "status": "pending"
+              }
+            type: simple
+    x-speakeasy-test-group: orders
+    x-speakeasy-test-rebuild: true
+  - workflowId: createOrder-completed_order
+    steps:
+      - stepId: test
+        operationId: createOrder
+        requestBody:
+          contentType: application/json
+          payload:
+            orderType: drink
+            productCode: AC-A2DF3
+            quantity: 887049
+        successCriteria:
+          - condition: $statusCode == 200
+          - condition: $response.header.Content-Type == application/json
+          - context: $response.body
+            condition: |
+              {
+                "orderType": "drink",
+                "productCode": "AC-A2DF3",
+                "quantity": 852070,
+                "status": "processing"
+              }
+            type: simple
+    x-speakeasy-test-group: orders
+    x-speakeasy-test-rebuild: true
+  - workflowId: createOrder
+    steps:
+      - stepId: test
+        operationId: createOrder
+        requestBody:
+          contentType: application/json
+          payload:
+            orderType: ingredient
+            productCode: AC-A2DF3
+            quantity: 127985
+        successCriteria:
+          - condition: $statusCode == 200
+          - condition: $response.header.Content-Type == application/json
+          - context: $response.body
+            condition: |
+              {
+                "orderType": "drink",
+                "productCode": "AC-A2DF3",
+                "quantity": 988377,
+                "status": "complete"
+              }
+            type: simple
+    x-speakeasy-test-group: orders
+    x-speakeasy-test-rebuild: true

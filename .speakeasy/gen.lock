@@ -1,0 +1,465 @@
+lockVersion: 2.0.0
+id: 9801ce96-546d-48b1-965b-9aa74e0b6275
+management:
+  docChecksum: 45130dacd1007ab8c52838692b3a1a63
+  docVersion: 1.0.0
+  speakeasyVersion: 1.575.4
+  generationVersion: 2.648.7
+  releaseVersion: 0.1.10
+  configChecksum: 6f869bed5935d73f67e622c4444f2c11
+features:
+  typescript:
+    acceptHeaders: 2.81.2
+    additionalDependencies: 0.1.0
+    callbacks: 1.0.0
+    core: 3.21.13
+    deepObjectParams: 0.1.0
+    defaultEnabledRetries: 0.1.0
+    devContainers: 2.90.0
+    enumUnions: 0.1.0
+    envVarSecurityUsage: 0.1.2
+    globalSecurity: 2.82.13
+    globalSecurityCallbacks: 0.1.0
+    globalSecurityFlattening: 0.1.0
+    globalServerURLs: 2.82.5
+    inputOutputModels: 2.82.0
+    mcpServer: 0.9.3
+    methodArguments: 0.1.2
+    methodSecurity: 2.82.6
+    mockServer: 0.1.1
+    nameOverrides: 2.81.2
+    responseFormat: 0.2.3
+    retries: 2.83.0
+    sdkHooks: 0.3.0
+    tests: 0.17.1
+    unions: 2.85.11
+    uploadStreams: 0.1.0
+    webhookHandlers: 0.1.0
+    webhooks: 1.5.0
+generatedFiles:
+  - .devcontainer/README.md
+  - .devcontainer/devcontainer.json
+  - .devcontainer/setup.sh
+  - .gitattributes
+  - .npmignore
+  - FUNCTIONS.md
+  - RUNTIMES.md
+  - USAGE.md
+  - docs/lib/utils/retryconfig.md
+  - docs/models/barcounter.md
+  - docs/models/callbacks/createorderorderupdaterequest.md
+  - docs/models/drink.md
+  - docs/models/drinkdatalevel.md
+  - docs/models/drinkingredient.md
+  - docs/models/drinkinput.md
+  - docs/models/drinkorder.md
+  - docs/models/drinkorderinput.md
+  - docs/models/drinkorderordertype.md
+  - docs/models/drinkorderstatus.md
+  - docs/models/drinktype.md
+  - docs/models/errors/apierror.md
+  - docs/models/errort.md
+  - docs/models/ingredient.md
+  - docs/models/ingredientinput.md
+  - docs/models/ingredientorder.md
+  - docs/models/ingredientorderinput.md
+  - docs/models/ingredientorderordertype.md
+  - docs/models/ingredientorderstatus.md
+  - docs/models/ingredienttype.md
+  - docs/models/operations/authenticaterequest.md
+  - docs/models/operations/authenticateresponse.md
+  - docs/models/operations/authenticateresponsebody.md
+  - docs/models/operations/createorderrequest.md
+  - docs/models/operations/createorderrequestbody.md
+  - docs/models/operations/createorderresponse.md
+  - docs/models/operations/createorderresponsebody.md
+  - docs/models/operations/deletedrinkrequest.md
+  - docs/models/operations/drinkingredient.md
+  - docs/models/operations/getdrinkrequest.md
+  - docs/models/operations/getdrinkresponse.md
+  - docs/models/operations/getdrinkresponseresult.md
+  - docs/models/operations/listdrinksrequest.md
+  - docs/models/operations/listdrinksresponse.md
+  - docs/models/operations/listdrinkssecurity.md
+  - docs/models/operations/listingredientsrequest.md
+  - docs/models/operations/listingredientsresponse.md
+  - docs/models/operations/photo.md
+  - docs/models/operations/requestbody.md
+  - docs/models/operations/responsebody.md
+  - docs/models/operations/searchdrinksrequest.md
+  - docs/models/operations/searchdrinksresponse.md
+  - docs/models/operations/searchdrinkssecurity.md
+  - docs/models/operations/updatedrinkmultipartrequest.md
+  - docs/models/operations/updatedrinkmultipartrequestbody.md
+  - docs/models/operations/updatedrinkmultipartresponse.md
+  - docs/models/operations/updatedrinkrawrequest.md
+  - docs/models/operations/updatedrinkrawresponse.md
+  - docs/models/operations/updatedrinkrequest.md
+  - docs/models/operations/updatedrinkresponse.md
+  - docs/models/operations/updatedrinkstringrequest.md
+  - docs/models/operations/updatedrinkstringresponse.md
+  - docs/models/operations/webhook.md
+  - docs/models/order.md
+  - docs/models/orderinput.md
+  - docs/models/orderordertype.md
+  - docs/models/orderstatus.md
+  - docs/models/publicdrink.md
+  - docs/models/publicdrinkdatalevel.md
+  - docs/models/security.md
+  - docs/models/webhooks/stockupdaterequest.md
+  - docs/sdks/authentication/README.md
+  - docs/sdks/configuration/README.md
+  - docs/sdks/drinks/README.md
+  - docs/sdks/ingredients/README.md
+  - docs/sdks/orders/README.md
+  - docs/sdks/speakeasybar/README.md
+  - eslint.config.mjs
+  - jsr.json
+  - package.json
+  - src/__tests__/assertions.ts
+  - src/__tests__/authentication.test.ts
+  - src/__tests__/drinks.test.ts
+  - src/__tests__/files.ts
+  - src/__tests__/ingredients.test.ts
+  - src/__tests__/mockserver/.gitignore
+  - src/__tests__/mockserver/Dockerfile
+  - src/__tests__/mockserver/Makefile
+  - src/__tests__/mockserver/README.md
+  - src/__tests__/mockserver/go.mod
+  - src/__tests__/mockserver/go.sum
+  - src/__tests__/mockserver/internal/handler/assert/contenttype.go
+  - src/__tests__/mockserver/internal/handler/assert/header.go
+  - src/__tests__/mockserver/internal/handler/assert/parameter.go
+  - src/__tests__/mockserver/internal/handler/assert/pointer.go
+  - src/__tests__/mockserver/internal/handler/assert/security.go
+  - src/__tests__/mockserver/internal/handler/doc.go
+  - src/__tests__/mockserver/internal/handler/generated_handler.go
+  - src/__tests__/mockserver/internal/handler/generated_handlers.go
+  - src/__tests__/mockserver/internal/handler/pathgetdrinks.go
+  - src/__tests__/mockserver/internal/handler/pathgetdrinksproductcode.go
+  - src/__tests__/mockserver/internal/handler/pathgetdrinkssearch.go
+  - src/__tests__/mockserver/internal/handler/pathgetingredients.go
+  - src/__tests__/mockserver/internal/handler/pathpatchdrinksproductcode.go
+  - src/__tests__/mockserver/internal/handler/pathpostauthenticate.go
+  - src/__tests__/mockserver/internal/handler/pathpostorder.go
+  - src/__tests__/mockserver/internal/handler/values/files.go
+  - src/__tests__/mockserver/internal/logging/doc.go
+  - src/__tests__/mockserver/internal/logging/formats.go
+  - src/__tests__/mockserver/internal/logging/http_file.go
+  - src/__tests__/mockserver/internal/logging/http_logger.go
+  - src/__tests__/mockserver/internal/logging/levels.go
+  - src/__tests__/mockserver/internal/logging/logger.go
+  - src/__tests__/mockserver/internal/logging/oas_operation.go
+  - src/__tests__/mockserver/internal/logging/oas_operation_call.go
+  - src/__tests__/mockserver/internal/sdk/models/callbacks/createorder.go
+  - src/__tests__/mockserver/internal/sdk/models/components/drink.go
+  - src/__tests__/mockserver/internal/sdk/models/components/drinkingredient.go
+  - src/__tests__/mockserver/internal/sdk/models/components/drinkinput.go
+  - src/__tests__/mockserver/internal/sdk/models/components/drinkorder.go
+  - src/__tests__/mockserver/internal/sdk/models/components/drinktype.go
+  - src/__tests__/mockserver/internal/sdk/models/components/error.go
+  - src/__tests__/mockserver/internal/sdk/models/components/httpmetadata.go
+  - src/__tests__/mockserver/internal/sdk/models/components/ingredient.go
+  - src/__tests__/mockserver/internal/sdk/models/components/ingredientinput.go
+  - src/__tests__/mockserver/internal/sdk/models/components/ingredientorder.go
+  - src/__tests__/mockserver/internal/sdk/models/components/ingredienttype.go
+  - src/__tests__/mockserver/internal/sdk/models/components/order.go
+  - src/__tests__/mockserver/internal/sdk/models/components/publicdrink.go
+  - src/__tests__/mockserver/internal/sdk/models/components/security.go
+  - src/__tests__/mockserver/internal/sdk/models/operations/authenticate.go
+  - src/__tests__/mockserver/internal/sdk/models/operations/createorder.go
+  - src/__tests__/mockserver/internal/sdk/models/operations/deletedrink.go
+  - src/__tests__/mockserver/internal/sdk/models/operations/getdrink.go
+  - src/__tests__/mockserver/internal/sdk/models/operations/listdrinks.go
+  - src/__tests__/mockserver/internal/sdk/models/operations/listingredients.go
+  - src/__tests__/mockserver/internal/sdk/models/operations/searchdrinks.go
+  - src/__tests__/mockserver/internal/sdk/models/operations/subscribetowebhooks.go
+  - src/__tests__/mockserver/internal/sdk/models/operations/updatedrink.go
+  - src/__tests__/mockserver/internal/sdk/models/operations/updatedrinkmultipart.go
+  - src/__tests__/mockserver/internal/sdk/models/operations/updatedrinkraw.go
+  - src/__tests__/mockserver/internal/sdk/models/operations/updatedrinkstring.go
+  - src/__tests__/mockserver/internal/sdk/models/sdkerrors/apierror.go
+  - src/__tests__/mockserver/internal/sdk/models/webhooks/stockupdate.go
+  - src/__tests__/mockserver/internal/sdk/types/bigint.go
+  - src/__tests__/mockserver/internal/sdk/types/date.go
+  - src/__tests__/mockserver/internal/sdk/types/datetime.go
+  - src/__tests__/mockserver/internal/sdk/types/decimal.go
+  - src/__tests__/mockserver/internal/sdk/types/jsonl/jsonl.go
+  - src/__tests__/mockserver/internal/sdk/types/pointers.go
+  - src/__tests__/mockserver/internal/sdk/utils/json.go
+  - src/__tests__/mockserver/internal/sdk/utils/reflect.go
+  - src/__tests__/mockserver/internal/sdk/utils/sort.go
+  - src/__tests__/mockserver/internal/server/doc.go
+  - src/__tests__/mockserver/internal/server/generated_handlers.go
+  - src/__tests__/mockserver/internal/server/internal_handlers.go
+  - src/__tests__/mockserver/internal/server/server.go
+  - src/__tests__/mockserver/internal/server/server_option.go
+  - src/__tests__/mockserver/internal/server/templates/log/index.html.tmpl
+  - src/__tests__/mockserver/internal/server/templates/log/operation.html.tmpl
+  - src/__tests__/mockserver/internal/server/templates/log/style.css.tmpl
+  - src/__tests__/mockserver/internal/tracking/requesttracker.go
+  - src/__tests__/mockserver/main.go
+  - src/__tests__/orders.test.ts
+  - src/__tests__/testclient.ts
+  - src/core.ts
+  - src/funcs/authenticationAuthenticate.ts
+  - src/funcs/configurationSubscribeToWebhooks.ts
+  - src/funcs/drinksDelete.ts
+  - src/funcs/drinksGet.ts
+  - src/funcs/drinksGetById.ts
+  - src/funcs/drinksSearch.ts
+  - src/funcs/drinksStockUpdate.ts
+  - src/funcs/drinksUpdate.ts
+  - src/funcs/drinksUpdateMultipart.ts
+  - src/funcs/drinksUpdateRaw.ts
+  - src/funcs/drinksUpdateString.ts
+  - src/funcs/ingredientsGet.ts
+  - src/funcs/ingredientsStockUpdate.ts
+  - src/funcs/ordersCreate.ts
+  - src/funcs/validateWebhook.ts
+  - src/hooks/hooks.ts
+  - src/hooks/index.ts
+  - src/hooks/types.ts
+  - src/index.ts
+  - src/lib/base64.ts
+  - src/lib/config.ts
+  - src/lib/dlv.ts
+  - src/lib/encodings.ts
+  - src/lib/env.ts
+  - src/lib/files.ts
+  - src/lib/http.ts
+  - src/lib/is-plain-object.ts
+  - src/lib/logger.ts
+  - src/lib/matchers.ts
+  - src/lib/primitives.ts
+  - src/lib/retries.ts
+  - src/lib/schemas.ts
+  - src/lib/sdks.ts
+  - src/lib/security.ts
+  - src/lib/url.ts
+  - src/mcp-server/build.mts
+  - src/mcp-server/cli.ts
+  - src/mcp-server/cli/start/command.ts
+  - src/mcp-server/cli/start/impl.ts
+  - src/mcp-server/console-logger.ts
+  - src/mcp-server/extensions.ts
+  - src/mcp-server/mcp-server.ts
+  - src/mcp-server/prompts.ts
+  - src/mcp-server/resources.ts
+  - src/mcp-server/scopes.ts
+  - src/mcp-server/server.ts
+  - src/mcp-server/shared.ts
+  - src/mcp-server/tools.ts
+  - src/mcp-server/tools/authenticationAuthenticate.ts
+  - src/mcp-server/tools/configurationSubscribeToWebhooks.ts
+  - src/mcp-server/tools/drinksDelete.ts
+  - src/mcp-server/tools/drinksGetById.ts
+  - src/mcp-server/tools/drinksUpdate.ts
+  - src/mcp-server/tools/drinksUpdateMultipart.ts
+  - src/mcp-server/tools/drinksUpdateRaw.ts
+  - src/mcp-server/tools/drinksUpdateString.ts
+  - src/mcp-server/tools/ingredientsGet.ts
+  - src/mcp-server/tools/ordersCreate.ts
+  - src/models/callbacks/createorder.ts
+  - src/models/callbacks/index.ts
+  - src/models/drink.ts
+  - src/models/drinkingredient.ts
+  - src/models/drinkinput.ts
+  - src/models/drinkorder.ts
+  - src/models/drinktype.ts
+  - src/models/error.ts
+  - src/models/errors/apierror.ts
+  - src/models/errors/httpclienterrors.ts
+  - src/models/errors/index.ts
+  - src/models/errors/responsevalidationerror.ts
+  - src/models/errors/sdkvalidationerror.ts
+  - src/models/errors/speakeasybardefaulterror.ts
+  - src/models/errors/speakeasybarerror.ts
+  - src/models/index.ts
+  - src/models/ingredient.ts
+  - src/models/ingredientinput.ts
+  - src/models/ingredientorder.ts
+  - src/models/ingredienttype.ts
+  - src/models/operations/authenticate.ts
+  - src/models/operations/createorder.ts
+  - src/models/operations/deletedrink.ts
+  - src/models/operations/getdrink.ts
+  - src/models/operations/index.ts
+  - src/models/operations/listdrinks.ts
+  - src/models/operations/listingredients.ts
+  - src/models/operations/searchdrinks.ts
+  - src/models/operations/subscribetowebhooks.ts
+  - src/models/operations/updatedrink.ts
+  - src/models/operations/updatedrinkmultipart.ts
+  - src/models/operations/updatedrinkraw.ts
+  - src/models/operations/updatedrinkstring.ts
+  - src/models/order.ts
+  - src/models/publicdrink.ts
+  - src/models/security.ts
+  - src/models/webhooks/index.ts
+  - src/models/webhooks/stockupdate.ts
+  - src/sdk/authentication.ts
+  - src/sdk/configuration.ts
+  - src/sdk/drinks.ts
+  - src/sdk/index.ts
+  - src/sdk/ingredients.ts
+  - src/sdk/orders.ts
+  - src/sdk/sdk.ts
+  - src/types/async.ts
+  - src/types/blobs.ts
+  - src/types/constdatetime.ts
+  - src/types/enums.ts
+  - src/types/fp.ts
+  - src/types/index.ts
+  - src/types/operations.ts
+  - src/types/rfcdate.ts
+  - src/types/streams.ts
+  - src/types/webhooks.ts
+  - tsconfig.json
+examples:
+  authenticate:
+    speakeasy-default-authenticate:
+      requestBody:
+        application/json: {}
+      responses:
+        "200":
+          application/json: {}
+        5XX:
+          application/json: {}
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+  listDrinks:
+    unauthenticated_drinks:
+      responses:
+        "200":
+          application/json: [{"name": "Old Fashioned", "type": "cocktail", "price": 1000, "photo": "https://speakeasy.bar/drinks/old_fashioned.jpg", "dataLevel": "unauthenticated"}, {"name": "Manhattan", "type": "cocktail", "price": 1200, "photo": "https://speakeasy.bar/drinks/manhattan.jpg", "dataLevel": "unauthenticated"}, {"name": "Negroni", "type": "cocktail", "price": 1500, "photo": "https://speakeasy.bar/drinks/negroni.jpg", "dataLevel": "unauthenticated"}]
+    authenticated_drinks:
+      responses:
+        "200":
+          application/json: [{"name": "Old Fashioned", "type": "cocktail", "price": 1000, "photo": "https://speakeasy.bar/drinks/old_fashioned.jpg", "dataLevel": "authenticated", "stock": 100, "productCode": "AC-A2DF3"}, {"name": "Manhattan", "type": "cocktail", "price": 1200, "photo": "https://speakeasy.bar/drinks/manhattan.jpg", "dataLevel": "authenticated", "stock": 50, "productCode": "AC-A2DF4"}, {"name": "Negroni", "type": "cocktail", "price": 1500, "photo": "https://speakeasy.bar/drinks/negroni.jpg", "dataLevel": "authenticated", "stock": 0, "productCode": "AC-A2DF5"}]
+  getDrink:
+    speakeasy-default-get-drink:
+      parameters:
+        path:
+          productCode: "AC-A2DF3"
+      responses:
+        "200":
+          application/json: {"name": "Old Fashioned", "price": 1000, "photo": "https://speakeasy.bar/drinks/old_fashioned.jpg", "productCode": "AC-A2DF3", "ingredients": [{"ingredientProductCode": "AC-A2DF3", "quantity": 253504}]}
+        5XX:
+          application/json: {}
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+  updateDrink:
+    old_fashioned:
+      parameters:
+        path:
+          productCode: "AC-A2DF3"
+      requestBody:
+        application/json: {"name": "Old Fashioned", "type": "cocktail", "price": 1000, "photo": "https://speakeasy.bar/drinks/old_fashioned.jpg", "productCode": "AC-A2DF3"}
+        text/*: "Old Fashioned\n\nA classic cocktail made with bourbon, bitters, sugar and a twist of orange peel."
+        text/csv: "x-file: example.file"
+        multipart/form-data: {"name": "Old Fashioned", "price": 1000}
+      responses:
+        "200":
+          application/json: {"name": "Old Fashioned", "type": "cocktail", "price": 1000, "photo": "https://speakeasy.bar/drinks/old_fashioned.jpg", "productCode": "AC-A2DF3"}
+          application/xml: "<drink name=\"Old Fashioned\" type=\"cocktail\" price=\"1000\" photo=\"https://speakeasy.bar/drinks/old_fashioned.jpg\"/>"
+  deleteDrink:
+    speakeasy-default-delete-drink:
+      parameters:
+        path:
+          productCode: "AC-A2DF3"
+      responses:
+        5XX:
+          application/json: {}
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+  searchDrinks:
+    old_fashioned:
+      parameters:
+        query:
+          query: "Old Fashioned"
+      responses:
+        "200":
+          application/json: [{"name": "Old Fashioned", "price": 1000, "photo": "https://speakeasy.bar/drinks/old_fashioned.jpg", "productCode": "AC-A2DF3", "ingredients": [{"ingredientProductCode": "AC-A2DF3", "quantity": 504946}]}]
+        5XX:
+          application/json: {}
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+    manhattan:
+      parameters:
+        query:
+          query: "Manhattan"
+      responses:
+        "200":
+          application/json: [{"name": "Old Fashioned", "price": 1000, "photo": "https://speakeasy.bar/drinks/old_fashioned.jpg", "productCode": "AC-A2DF3", "ingredients": [{"ingredientProductCode": "AC-A2DF3", "quantity": 504946}]}]
+        5XX:
+          application/json: {}
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+  stockUpdate:
+    speakeasy-default-stock-update:
+      requestBody:
+        application/json: {"drink": {"name": "Old Fashioned", "price": 1000, "photo": "https://speakeasy.bar/drinks/old_fashioned.jpg", "productCode": "AC-A2DF3", "ingredients": [{"ingredientProductCode": "AC-A2DF3", "quantity": 111009}]}, "ingredient": {"name": "Sugar Syrup", "type": "packaged", "productCode": "AC-A2DF3", "photo": "https://speakeasy.bar/ingredients/sugar_syrup.jpg"}}
+      responses:
+        5XX:
+          application/json: {}
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+  listIngredients:
+    speakeasy-default-list-ingredients:
+      responses:
+        "200":
+          application/json: [{"name": "Sugar Syrup", "type": "packaged", "stock": 10, "productCode": "AC-A2DF3", "photo": "https://speakeasy.bar/ingredients/sugar_syrup.jpg"}]
+        5XX:
+          application/json: {}
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+  createOrder:
+    pending_order:
+      requestBody:
+        application/json: {"orderType": "drink", "productCode": "AC-A2DF3", "quantity": 185162}
+      responses:
+        "200":
+          application/json: {"orderType": "ingredient", "productCode": "AC-A2DF3", "quantity": 924003, "status": "pending"}
+    completed_order:
+      requestBody:
+        application/json: {"orderType": "drink", "productCode": "AC-A2DF3", "quantity": 887049}
+      responses:
+        "200":
+          application/json: {"orderType": "drink", "productCode": "AC-A2DF3", "quantity": 852070, "status": "processing"}
+    speakeasy-default-create-order:
+      requestBody:
+        application/json: {"orderType": "ingredient", "productCode": "AC-A2DF3", "quantity": 127985}
+      responses:
+        "200":
+          application/json: {"orderType": "drink", "productCode": "AC-A2DF3", "quantity": 988377, "status": "complete"}
+          application/xml: "0x2fB7Be9AA9"
+        5XX:
+          application/json: {}
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+  subscribeToWebhooks:
+    speakeasy-default-subscribe-to-webhooks:
+      requestBody:
+        application/json: []
+      responses:
+        5XX:
+          application/json: {}
+        default:
+          application/json: {"code": "<value>", "message": "<value>"}
+examplesVersion: 1.0.2
+generatedTests:
+  authenticate: "2025-07-03T14:06:04+10:00"
+  listDrinks-unauthenticated_drinks: "2025-07-03T14:06:04+10:00"
+  listDrinks-authenticated_drinks: "2025-07-03T14:06:04+10:00"
+  getDrink: "2025-07-03T14:06:04+10:00"
+  updateDrink-old_fashioned: "2025-07-03T14:06:04+10:00"
+  searchDrinks-old_fashioned: "2025-07-03T14:06:04+10:00"
+  searchDrinks-manhattan: "2025-07-03T14:06:04+10:00"
+  listIngredients: "2025-07-03T14:06:04+10:00"
+  createOrder-pending_order: "2025-07-03T14:06:04+10:00"
+  createOrder-completed_order: "2025-07-03T14:06:04+10:00"
+  createOrder: "2025-07-03T14:06:04+10:00"
+  listDrinks: "2025-07-03T14:11:41+10:00"
+  updateDrink: "2025-07-03T14:11:41+10:00"
+  searchDrinks: "2025-07-03T14:11:41+10:00"

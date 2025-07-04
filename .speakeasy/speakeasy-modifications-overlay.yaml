@@ -1,0 +1,82 @@
+overlay: 1.0.0
+x-speakeasy-jsonpath: rfc9535
+info:
+  title: Speakeasy Modifications
+  version: 0.0.2
+  x-speakeasy-metadata:
+    after: ""
+    before: ""
+    type: speakeasy-modifications
+actions:
+  - target: $["paths"]["/drinks/search"]["get"]
+    update:
+      x-speakeasy-name-override: search
+    x-speakeasy-metadata:
+      after: sdk.drinks.search()
+      before: sdk.drinks.searchDrinks()
+      created_at: 1751513826371
+      reviewed_at: 1751513837659
+      type: method-name
+  - target: $["paths"]["/drinks/{productCode}"]["get"]
+    update:
+      x-speakeasy-name-override: getById
+    x-speakeasy-metadata:
+      after: sdk.drinks.getById()
+      before: sdk.drinks.getDrink()
+      created_at: 1751513826371
+      reviewed_at: 1751513837659
+      type: method-name
+  - target: $["paths"]["/drinks"]["post"]
+    update:
+      x-speakeasy-name-override: create
+    x-speakeasy-metadata:
+      after: sdk.drinks.create()
+      before: sdk.drinks.createDrink()
+      created_at: 1751513826371
+      reviewed_at: 1751513837659
+      type: method-name
+  - target: $["paths"]["/drinks"]["get"]
+    update:
+      x-speakeasy-name-override: get
+    x-speakeasy-metadata:
+      after: sdk.drinks.get()
+      before: sdk.drinks.listDrinks()
+      created_at: 1751513826371
+      reviewed_at: 1751513837659
+      type: method-name
+  - target: $["paths"]["/drinks/{productCode}"]["patch"]
+    update:
+      x-speakeasy-name-override: update
+    x-speakeasy-metadata:
+      after: sdk.drinks.update()
+      before: sdk.drinks.updateDrink()
+      created_at: 1751513826371
+      reviewed_at: 1751513837659
+      type: method-name
+  - target: $["paths"]["/order"]["post"]
+    update:
+      x-speakeasy-name-override: create
+    x-speakeasy-metadata:
+      after: sdk.orders.create()
+      before: sdk.orders.createOrder()
+      created_at: 1751513826371
+      reviewed_at: 1751513837659
+      type: method-name
+  - target: $["paths"]["/ingredients"]["get"]
+    update:
+      x-speakeasy-name-override: get
+    x-speakeasy-metadata:
+      after: sdk.ingredients.get()
+      before: sdk.ingredients.listIngredients()
+      created_at: 1751513826371
+      reviewed_at: 1751513837659
+      type: method-name
+  - target: $["paths"]["/drinks/{productCode}"]["delete"]
+    update:
+      x-speakeasy-name-override: delete
+    x-speakeasy-metadata:
+      after: sdk.drinks.delete()
+      before: sdk.drinks.deleteDrink()
+      created_at: 1751513826371
+      reviewed_at: 1751513837659
+      type: method-name
