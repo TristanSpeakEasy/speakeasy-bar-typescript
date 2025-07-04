@@ -692,6 +692,15 @@ components:
               enum:
                 - authenticated
               readOnly: true
+            healthRating:
+              description: The health rating of the drink, only available when authenticated.
+              type: string
+              enum:
+                - good
+                - fair
+                - poor
+          required:
+            - healthRating
       required:
         - name
         - price
