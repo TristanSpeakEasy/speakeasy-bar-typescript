@@ -3,6 +3,16 @@
 
 ## Supported Types
 
+### `models.PublicDrink`
+
+```typescript
+const value: models.PublicDrink = {
+  name: "Old Fashioned",
+  price: 1000,
+  photo: "https://speakeasy.bar/drinks/old_fashioned.jpg",
+};
+```
+
 ### `models.Drink`
 
 ```typescript
@@ -17,16 +27,6 @@ const value: models.Drink = {
       quantity: 832313,
     },
   ],
-};
-```
-
-### `models.PublicDrink`
-
-```typescript
-const value: models.PublicDrink = {
-  name: "Old Fashioned",
-  price: 1000,
-  photo: "https://speakeasy.bar/drinks/old_fashioned.jpg",
 };
 ```
 
