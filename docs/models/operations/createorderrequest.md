@@ -5,7 +5,13 @@
 ```typescript
 import { CreateOrderRequest } from "speakeasy-bar/models/operations";
 
-let value: CreateOrderRequest = {};
+let value: CreateOrderRequest = {
+  requestBody: {
+    orderType: "ingredient",
+    productCode: "AC-A2DF3",
+    quantity: 608897,
+  },
+};
 ```
 
 ## Fields

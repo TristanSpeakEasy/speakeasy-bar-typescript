@@ -25,7 +25,7 @@ generation:
     generateNewTests: true
     skipResponseBodyAssertions: false
 typescript:
-  version: 0.1.10
+  version: 0.1.11
   additionalDependencies:
     dependencies: {}
     devDependencies: {}
@@ -43,6 +43,7 @@ typescript:
   envVarPrefix: SPEAKEASYBAR
   flattenGlobalSecurity: true
   flatteningOrder: parameters-first
+  generateExamples: true
   imports:
     option: openapi
     paths:
