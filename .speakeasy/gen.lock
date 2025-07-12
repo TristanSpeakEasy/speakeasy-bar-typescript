@@ -3,16 +3,18 @@ id: 9801ce96-546d-48b1-965b-9aa74e0b6275
 management:
   docChecksum: 45130dacd1007ab8c52838692b3a1a63
   docVersion: 1.0.0
-  speakeasyVersion: 1.575.4
-  generationVersion: 2.648.7
-  releaseVersion: 0.1.10
-  configChecksum: 6f869bed5935d73f67e622c4444f2c11
+  speakeasyVersion: 1.581.0
+  generationVersion: 2.656.5
+  releaseVersion: 0.1.11
+  configChecksum: 271c6a03c97078a2fe818e18735ebfe0
+  repoURL: https://github.com/TristanSpeakEasy/speakeasy-bar-typescript.git
+  installationURL: https://github.com/TristanSpeakEasy/speakeasy-bar-typescript
 features:
   typescript:
     acceptHeaders: 2.81.2
     additionalDependencies: 0.1.0
     callbacks: 1.0.0
-    core: 3.21.13
+    core: 3.21.14
     deepObjectParams: 0.1.0
     defaultEnabledRetries: 0.1.0
     devContainers: 2.90.0
@@ -114,6 +116,10 @@ generatedFiles:
   - docs/sdks/orders/README.md
   - docs/sdks/speakeasybar/README.md
   - eslint.config.mjs
+  - examples/.env.template
+  - examples/README.md
+  - examples/authenticationAuthenticate.example.ts
+  - examples/package.json
   - jsr.json
   - package.json
   - src/__tests__/assertions.ts
@@ -460,3 +466,6 @@ generatedTests:
   createOrder-pending_order: "2025-07-04T10:56:28+10:00"
   createOrder-completed_order: "2025-07-04T10:56:28+10:00"
   createOrder: "2025-07-04T10:56:28+10:00"
+  listDrinks: "2025-07-12T00:28:47Z"
+  updateDrink: "2025-07-12T00:28:47Z"
+  searchDrinks: "2025-07-12T00:28:47Z"

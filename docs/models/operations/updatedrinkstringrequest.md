@@ -7,6 +7,7 @@ import { UpdateDrinkStringRequest } from "speakeasy-bar/models/operations";
 
 let value: UpdateDrinkStringRequest = {
   productCode: "AC-A2DF3",
+  requestBody: "<value>",
 };
 ```
 

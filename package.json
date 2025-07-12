@@ -1,6 +1,6 @@
 {
   "name": "speakeasy-bar",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "author": "Speakeasy",
   "type": "module",
   "bin": {
@@ -24,6 +24,10 @@
     }
   },
   "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TristanSpeakEasy/speakeasy-bar-typescript.git"
+  },
   "scripts": {
     "test": "vitest run src --reporter=junit --outputFile=.speakeasy/reports/tests.xml --reporter=default",
     "check": "npm run test && npm run lint",
@@ -34,7 +38,7 @@
   },
   "peerDependencies": {
     "@modelcontextprotocol/sdk": ">=1.5.0 <1.10.0",
-    "zod": ">= 3"
+    "zod": "^3"
   },
   "peerDependenciesMeta": {
     "@modelcontextprotocol/sdk": {

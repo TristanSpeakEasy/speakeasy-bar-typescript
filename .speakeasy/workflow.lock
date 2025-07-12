@@ -1,27 +1,28 @@
-speakeasyVersion: 1.575.4
+speakeasyVersion: 1.581.0
 sources:
     The Speakeasy Bar:
         sourceNamespace: the-speakeasy-bar
-        sourceRevisionDigest: sha256:53435045c3ab72840a8f7a56c7d228359ccd76b479ece2f288ade4cafdbd35b9
-        sourceBlobDigest: sha256:b76337fc3fd414bb25be261e74a1f0637b9d997571e232038181ab3fa960e897
+        sourceRevisionDigest: sha256:f499af0138877527d8ec8f8a5164578d3df6523aeff1f1ad224aca2b1a63049f
+        sourceBlobDigest: sha256:9b632c747ac37c320102dc97f6bdb61d28e9e2fb5548277ff4925698b3334a70
         tags:
             - latest
+            - speakeasy-sdk-regen-1751591711
             - 1.0.0
 targets:
     speakeasy-bar:
         source: The Speakeasy Bar
         sourceNamespace: the-speakeasy-bar
-        sourceRevisionDigest: sha256:53435045c3ab72840a8f7a56c7d228359ccd76b479ece2f288ade4cafdbd35b9
-        sourceBlobDigest: sha256:b76337fc3fd414bb25be261e74a1f0637b9d997571e232038181ab3fa960e897
+        sourceRevisionDigest: sha256:f499af0138877527d8ec8f8a5164578d3df6523aeff1f1ad224aca2b1a63049f
+        sourceBlobDigest: sha256:9b632c747ac37c320102dc97f6bdb61d28e9e2fb5548277ff4925698b3334a70
         codeSamplesNamespace: the-speakeasy-bar-typescript-code-samples
-        codeSamplesRevisionDigest: sha256:3bbf95ff013416fe8f78e25d3a0a638e79de0a33b2404096c43a01ecb00231a3
+        codeSamplesRevisionDigest: sha256:f2461242e635cf094b9aca9f5549c79f3bbacafe338974668d8eb68b14fef2a1
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest
     sources:
         The Speakeasy Bar:
             inputs:
-                - location: ../../openapi-specs/speakeasy-bar.yaml
+                - location: ./speakeasy-bar.yaml
             overlays:
                 - location: .speakeasy/speakeasy-modifications-overlay.yaml
             output: .speakeasy/out.openapi.yaml

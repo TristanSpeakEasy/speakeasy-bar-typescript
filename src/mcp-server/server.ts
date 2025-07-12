@@ -36,7 +36,7 @@ export function createMCPServer(deps: {
 }) {
   const server = new McpServer({
     name: "SpeakeasyBar",
-    version: "0.1.10",
+    version: "0.1.11",
   });
 
   const client = new SpeakeasyBarCore({
