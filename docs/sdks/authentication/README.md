@@ -15,6 +15,7 @@ Authenticate with the API by providing a username and password.
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="authenticate" method="post" path="/authenticate" -->
 ```typescript
 import { SpeakeasyBar } from "speakeasy-bar";
 

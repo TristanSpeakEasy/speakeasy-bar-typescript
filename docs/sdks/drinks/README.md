@@ -23,6 +23,7 @@ Get a list of drinks, if authenticated this will include stock levels and produc
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="listDrinks" method="get" path="/drinks" -->
 ```typescript
 import { SpeakeasyBar } from "speakeasy-bar";
 
@@ -89,6 +90,7 @@ Get a drink by product code. Only available when authenticated.
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="getDrink" method="get" path="/drinks/{productCode}" -->
 ```typescript
 import { SpeakeasyBar } from "speakeasy-bar";
 
@@ -162,6 +164,7 @@ Update a drink. Only available when authenticated.
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="updateDrink" method="patch" path="/drinks/{productCode}" -->
 ```typescript
 import { SpeakeasyBar } from "speakeasy-bar";
 
@@ -249,6 +252,7 @@ Update a drink. Only available when authenticated.
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="updateDrink_string" method="patch" path="/drinks/{productCode}" -->
 ```typescript
 import { SpeakeasyBar } from "speakeasy-bar";
 
@@ -324,6 +328,7 @@ Update a drink. Only available when authenticated.
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="updateDrink_raw" method="patch" path="/drinks/{productCode}" -->
 ```typescript
 import { SpeakeasyBar } from "speakeasy-bar";
 
@@ -399,6 +404,7 @@ Update a drink. Only available when authenticated.
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="updateDrink_multipart" method="patch" path="/drinks/{productCode}" -->
 ```typescript
 import { openAsBlob } from "node:fs";
 import { SpeakeasyBar } from "speakeasy-bar";
@@ -486,6 +492,7 @@ Delete a drink. Only available when authenticated.
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="deleteDrink" method="delete" path="/drinks/{productCode}" -->
 ```typescript
 import { SpeakeasyBar } from "speakeasy-bar";
 
@@ -559,6 +566,7 @@ Search for drinks, if authenticated this will include stock levels and product c
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="searchDrinks" method="get" path="/drinks/search" -->
 ```typescript
 import { SpeakeasyBar } from "speakeasy-bar";
 
@@ -629,6 +637,7 @@ Receive stock updates from the bar, this will be called whenever the stock level
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="stockUpdate" method="post" path="stockUpdate" -->
 ```typescript
 import { SpeakeasyBar } from "speakeasy-bar";
 

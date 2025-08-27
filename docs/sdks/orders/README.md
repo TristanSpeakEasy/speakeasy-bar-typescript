@@ -15,6 +15,7 @@ Create an order for a drink.
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="createOrder" method="post" path="/order" -->
 ```typescript
 import { SpeakeasyBar } from "speakeasy-bar";
 

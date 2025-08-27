@@ -16,6 +16,7 @@ Get a list of ingredients, if authenticated this will include stock levels and p
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="listIngredients" method="get" path="/ingredients" -->
 ```typescript
 import { SpeakeasyBar } from "speakeasy-bar";
 
@@ -85,6 +86,7 @@ Receive stock updates from the bar, this will be called whenever the stock level
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="stockUpdate" method="post" path="stockUpdate" -->
 ```typescript
 import { SpeakeasyBar } from "speakeasy-bar";
 

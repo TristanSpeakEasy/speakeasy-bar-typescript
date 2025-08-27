@@ -15,6 +15,7 @@ Subscribe to webhooks.
 
 ### Example Usage
 
+<!-- UsageSnippet language="typescript" operationID="subscribeToWebhooks" method="post" path="/webhooks/subscribe" -->
 ```typescript
 import { SpeakeasyBar } from "speakeasy-bar";
 
