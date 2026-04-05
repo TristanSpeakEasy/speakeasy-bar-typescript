@@ -5,8 +5,10 @@ management:
   docVersion: 1.0.0
   speakeasyVersion: 1.575.4
   generationVersion: 2.648.7
-  releaseVersion: 0.1.10
-  configChecksum: 6f869bed5935d73f67e622c4444f2c11
+  releaseVersion: 0.1.11
+  configChecksum: 09b342a9769ad839075045718b78f42c
+  repoURL: https://github.com/TristanSpeakEasy/speakeasy-bar-typescript.git
+  installationURL: https://github.com/TristanSpeakEasy/speakeasy-bar-typescript
 features:
   typescript:
     acceptHeaders: 2.81.2
@@ -460,3 +462,6 @@ generatedTests:
   createOrder-pending_order: "2025-07-04T10:56:28+10:00"
   createOrder-completed_order: "2025-07-04T10:56:28+10:00"
   createOrder: "2025-07-04T10:56:28+10:00"
+  listDrinks: "2026-04-05T00:44:59Z"
+  updateDrink: "2026-04-05T00:44:59Z"
+  searchDrinks: "2026-04-05T00:44:59Z"
